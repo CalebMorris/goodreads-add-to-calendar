@@ -1,13 +1,13 @@
 {
   "manifest_version": 2,
 
-  "name": "Extension Name",
-  "description": "Extension Description",
-  "version": "1.0",
+  "name": "goodreads-add-to-calendar",
+  "description": "Add a book that has an expected publication date to google calendar",
+  "version": "0.0.1",
 
   "browser_action": {
-  "default_icon": "assets/images/icon.png",
-  "default_title": "Chrome Extension Title",
-  "default_popup": "src/html/popup.html"
+    "default_icon": "assets/images/icon.png",
+    "default_title": "Chrome Extension Title",
+    "default_popup": "src/html/popup.html"
   }
 }

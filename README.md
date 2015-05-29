@@ -1,1 +1,3 @@
-This is a starter folder for creating chrome extensions with 1 popup page.
+# Goodreads - Add to Calendar
+A little extension that for books that have `Expected publication` dates
+ creates an easy way to add them to google calendar.
