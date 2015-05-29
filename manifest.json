@@ -3,12 +3,12 @@
 
   "name": "goodreads-add-to-calendar",
   "description": "Add a book that has an expected publication date to google calendar",
-  "version": "0.0.1",
+  "version": "0.0.2",
 
   "content_scripts": [
     {
       "matches": ["*://www.goodreads.com/book/show/*"],
-      "css": ["src/css/add-button.css"],
+      "css": ["assets/css/font-awesome.min.css", "src/css/add-button.css"],
       "js": ["src/scripts/add-button.js"]
     }
   ]
