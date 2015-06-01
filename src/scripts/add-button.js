@@ -90,7 +90,7 @@ function extractDate(detailText) {
   var day = match[2];
   var year = match[3];
   var constructed = new Date(year + ' ' + day + ' ' + monthName);
-  var month = constructed.getMonth().toString();
+  var month = (constructed.getMonth() + 1).toString();
   return { month : month, day : constructed.getDate(), year : year };
 }
 
