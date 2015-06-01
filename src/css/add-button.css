@@ -1,0 +1,42 @@
+.goodreads-calendar {
+  display: inline-block;
+  top: 9.9px !important;
+  width: 27.3px;
+  height: 30px;
+  background: #fff;
+  position: relative;
+}
+
+.goodreads-calendar .binds {
+  position: absolute;
+  height: 4.08px;
+  width: 16.38px;
+  background: transparent;
+  border: 2px solid #999;
+  border-width: 0 1.365px;
+  top: -1.62px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.goodreads-calendar .month {
+  background: #555;
+  display: block;
+  padding: 2.181px 0;
+  color: #fff;
+  height: 3.27px;
+  border-bottom: 2px solid #333;
+  box-shadow: inset 0 -1px 0 0 #666;
+}
+
+.goodreads-calendar .day {
+  display: block;
+  margin: 0;
+  margin-left: .5px;
+  padding: 2.73px 0;
+  height: 13.08px;
+  box-shadow: 0 0 0.3px #ccc;
+  position: relative;
+}
+

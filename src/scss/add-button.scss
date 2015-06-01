@@ -1,0 +1,45 @@
+$boxheight: 30px;
+$boxwidth: ($boxheight * 0.91);
+
+.goodreads-calendar {
+  display: inline-block;
+  top: ($boxheight * 0.33) !important;
+  width: $boxwidth;
+  height: $boxheight;
+  background: #fff;
+  position: relative;
+
+  .binds {
+    position: absolute;
+    height: ($boxheight * 0.136);
+    width: ($boxwidth * 0.6);
+    background: transparent;
+    border: 2px solid #999;
+    border-width: 0 ($boxwidth * 0.05);
+    top: ($boxheight * -0.054);
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .month {
+    background: #555;
+    display: block;
+    padding: ($boxheight * 0.0727) 0;
+    color: #fff;
+    height: ($boxheight * 0.109);
+    border-bottom: 2px solid #333;
+    box-shadow: inset 0 -1px 0 0 #666;
+  }
+
+  .day {
+    display: block;
+    margin: 0;
+    margin-left: .5px;
+    padding: ($boxheight * 0.091) 0;
+    height: ($boxheight * 0.436);
+    box-shadow: 0 0 ($boxheight * 0.01) #ccc;
+    position: relative;
+  }
+}
+

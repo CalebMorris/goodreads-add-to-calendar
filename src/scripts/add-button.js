@@ -44,6 +44,26 @@ function generateCalendarEvent(date, datePlusDay, book, link) {
   return encodeURI(stringGenerated);
 }
 
+function constructCalendar() {
+  var calendar = document.createElement('span');
+  calendar.setAttribute('class', 'goodreads-calendar');
+
+  var stiches = document.createElement('span');
+  stiches.setAttribute('class', 'binds');
+
+  var header = document.createElement('span');
+  header.setAttribute('class', 'month');
+
+  var date = document.createElement('span');
+  date.setAttribute('class', 'day');
+
+  calendar.appendChild(stiches);
+  calendar.appendChild(header);
+  calendar.appendChild(date);
+
+  return calendar;
+}
+
 function attachEventButton(publicationDate) {
   var date = publicationDate.date;
   var element = publicationDate.element;
@@ -55,10 +75,11 @@ function attachEventButton(publicationDate) {
     window.location.href
   );
 
-  var icon = document.createElement('i');
-  icon.setAttribute('class', 'fa fa-calendar');
+  var button = document.createElement('a');
+  button.setAttribute('href', 'http://www.example.com');
+  button.appendChild(constructCalendar());
 
-  element.appendChild(icon);
+  element.appendChild(button);
 }
 
 function extractDate(detailText) {
