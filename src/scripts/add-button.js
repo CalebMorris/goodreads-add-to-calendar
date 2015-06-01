@@ -21,11 +21,11 @@ function generateDescription(book, link) {
 
 function formatDate(date) {
   if (date.month.length === 1) {
-    date.month = "0" + date.month;
+    date.month = '0' + date.month;
   }
 
   if (date.day < 10) {
-    date.day = "0" + date.day;
+    date.day = '0' + date.day;
   }
 
   return date.year + date.month + date.day;
@@ -76,7 +76,8 @@ function attachEventButton(publicationDate) {
   );
 
   var button = document.createElement('a');
-  button.setAttribute('href', 'http://www.example.com');
+  button.setAttribute('href', calendarEvent);
+  button.setAttribute('target', '_blank');
   button.appendChild(constructCalendar());
 
   element.appendChild(button);
